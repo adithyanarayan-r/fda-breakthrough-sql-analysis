@@ -86,7 +86,7 @@ A small group of companies contributes a significant share of approvals.
 
 ---
 
-### 📊 Company vs Therapy Area
+### Company vs Therapy Area
 - Companies show **therapy-specific concentration**  
 - Example:
   - Regeneron → Cardiovascular  
@@ -105,14 +105,14 @@ Company approvals vary across years, indicating non-uniform performance.
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 - Microsoft SQL Server (SSMS)-(For Data Analysis)  
 - Power BI (Visualization)  
 - Microsoft Excel (Data Preparation)  
 
 ---
 
-## 🎯 Skills Demonstrated
+## Skills Demonstrated
 - Data Analysis using SQL  
 - Trend Analysis  
 - Market Research  
@@ -120,7 +120,7 @@ Company approvals vary across years, indicating non-uniform performance.
 
 ---
 
-## 👤 Author
+## Author
 **Adithya Narayan R**  
 M.Tech (Pharmaceutical Science & Engineering), IIT (ISM) Dhanbad  
 Market Research | Healthcare Analytics
