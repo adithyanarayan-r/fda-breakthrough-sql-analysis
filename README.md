@@ -1,75 +1,126 @@
-#  FDA Breakthrough Therapy Approval – SQL Analysis (2020–2024)
+# US FDA Breakthrough Therapy Analysis (2020–2025)
 
-##  Project Overview
-This project analyzes FDA Breakthrough Therapy approvals from 2020 to 2024 using MySQL.  
-The dataset contains **144 approval records** across multiple pharmaceutical companies and therapy areas.
-
-The objective of this project is to perform SQL-based analysis to identify trends, company dominance, and therapy distribution patterns.
+## Project Overview
+This project analyzes US FDA Breakthrough Therapy approvals from 2020 to 2025 using SQL and Power BI.  
+The analysis focuses on approval trends, therapy area distribution, and company performance in the pharmaceutical industry.
 
 ---
 
-##  Dataset Information
-- Total Records: 144  
-- Fields Used:
-  - drug_name  
-  - company  
-  - approval_date  
-  - therapy_area  
+## Objective
+To explore trends in breakthrough therapy approvals and identify key therapy areas and leading pharmaceutical companies.
 
 ---
 
-##  Tools Used
-- MySQL Workbench  
-- SQL  
-- Microsoft Excel  
+## Dataset
+- Source: FDA  
+- Time Period: 2020–2025  
+- Total Approvals: **181**  
+- Total Companies: **101**  
+- Therapy Areas: **12**
 
 ---
 
-##  Key Analysis Performed
+## Analysis Performed (SQL)
 
-- Calculated total FDA breakthrough approvals  
-- Conducted year-wise trend analysis using YEAR() function  
-- Ranked companies based on approval count  
-- Analyzed therapy area distribution  
-- Filtered Oncology-specific approvals using WHERE clause  
-- Identified high-performing companies using HAVING clause  
-
----
-
-##  SQL Concepts Applied
-
-- SELECT  
-- COUNT()  
-- GROUP BY  
-- ORDER BY  
-- WHERE  
-- HAVING  
-- YEAR()  
+- Total approvals  
+- Year-wise approval trend  
+- Therapy area distribution  
+- Company-wise approval counts  
+- Company vs therapy area analysis  
+- Company ranking using window functions  
+- Year-wise approvals for each company  
 
 ---
 
-##  Sample Query
+## Key Insights (SQL-Based)
 
-```sql
-SELECT 
-    company,
-    COUNT(*) AS approvals
-FROM fda_approvals
-GROUP BY company
-HAVING COUNT(*) > 3
-ORDER BY approvals DESC;
-```
+### Overall Summary
+- Total approvals (2020–2025): **181**
 
 ---
 
-##  Business Insights
+### Year-wise Approval Trend
+- 2020: 35 approvals  
+- 2021: 31 approvals  
+- 2022: 26 approvals  
+- 2023: 18 approvals (lowest)  
+- 2024: 34 approvals  
+- 2025: 37 approvals (highest)  
 
-- Identified dominant pharmaceutical companies in breakthrough approvals  
-- Observed therapy area concentration trends  
-- Evaluated year-over-year approval growth (2020–2024)  
+ Approvals declined from 2020 to 2023, followed by strong recovery in 2024 and 2025.
 
 ---
 
-##  Outcome
+### Therapy Area Distribution
+- Oncology: **96 approvals (~53%)**  
+- Immunology: 16  
+- Infectious: 13  
+- Endocrine: 11  
+- Rare Disease: 11  
+- Hematology: 8  
+- Neurology: 7  
+- Cardiovascular: 7  
+- Respiratory: 4  
+- Renal: 3  
 
-This project demonstrates practical SQL skills in data aggregation, filtering, and trend analysis aligned with Business Analyst responsibilities.
+Oncology is the dominant therapy area, contributing more than half of total approvals.
+
+---
+
+### Company-wise Approvals
+- Genentech Inc: **10 approvals**  
+- Daiichi Sankyo Inc: 8  
+- Novartis Pharmaceuticals Corp: 8  
+- Boehringer Ingelheim: 6  
+- Regeneron Pharmaceuticals: 6  
+- Bristol-Myers Squibb: 5  
+
+A small group of companies contributes a significant share of approvals.
+
+---
+
+### Company Ranking
+- Genentech ranks **#1** based on total approvals  
+- Daiichi Sankyo and Novartis share **#2 rank**  
+- Other companies follow with moderate contributions  
+
+---
+
+### 📊 Company vs Therapy Area
+- Companies show **therapy-specific concentration**  
+- Example:
+  - Regeneron → Cardiovascular  
+  - Neurocrine Biosciences → Endocrine  
+
+Indicates specialization in specific therapeutic areas.
+
+---
+
+### Company Performance Over Time
+- Example:
+  - Genentech → 4 approvals in 2020  
+  - AstraZeneca → 2 approvals in 2020  
+
+Company approvals vary across years, indicating non-uniform performance.
+
+---
+
+## 🛠 Tools Used
+- Microsoft SQL Server (SSMS)-(For Data Analysis)  
+- Power BI (Visualization)  
+- Microsoft Excel (Data Preparation)  
+
+---
+
+## 🎯 Skills Demonstrated
+- Data Analysis using SQL  
+- Trend Analysis  
+- Market Research  
+- Company Performance Analysis  
+
+---
+
+## 👤 Author
+**Adithya Narayan R**  
+M.Tech (Pharmaceutical Science & Engineering), IIT (ISM) Dhanbad  
+Market Research | Healthcare Analytics
