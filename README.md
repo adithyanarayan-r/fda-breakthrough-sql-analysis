@@ -1,7 +1,7 @@
 # US FDA Breakthrough Therapy Analysis (2020–2025)
 
 ## Project Overview
-This project analyzes US FDA Breakthrough Therapy approvals from 2020 to 2025 using SQL and Power BI.  
+This project analyzes US FDA Breakthrough Therapy approvals from 2020 to 2025 using SQL.  
 The analysis focuses on approval trends, therapy area distribution, and company performance in the pharmaceutical industry.
 
 ---
